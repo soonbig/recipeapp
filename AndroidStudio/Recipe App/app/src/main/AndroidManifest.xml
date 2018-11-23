@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.neurondigital.recipeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--needed for image loading to create a recipe-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        tools:replace="android:icon">
+        <activity
+            android:name="com.neurondigital.recipeapp.MainActivity"
+            android:hardwareAccelerated="true">
+            <meta-data
+                android:name="android.app.searchable"
+
+                android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.neurondigital.recipeapp.SingleRecipeActivity"
+            android:label="@string/recipe_page_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="recipeapp.neurondigital.com"
+                    android:scheme="http" />
+                <data
+                    android:host="recipeapp.neurondigital.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.neurondigital.recipeapp.PremiumActivity"
+            android:label="@string/premium_title"></activity>
+
+        <activity
+            android:name="com.neurondigital.recipeapp.SettingsActivity"
+            android:label="@string/settings_title">
+
+        </activity>
+
+        <activity android:name=".CategoryRecipesActivity" />
+        <activity android:name=".AddRecipeActivity" />
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".ShoppingListActivity" />
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".TermsActivity" />
+        <activity android:name=".PolicyActivity" />
+
+
+
+        <!-- [firebase] -->
+        <service android:name="com.neurondigital.recipeapp.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.neurondigital.recipeapp.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/icon" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
+
+        <!-- [ADMOB] -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+
+
+    </application>
+
+</manifest>

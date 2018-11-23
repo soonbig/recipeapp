@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    api 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+    api 'com.nhaarman.listviewanimations:lib-manipulation:3.1.0@aar'
+    api 'com.nhaarman.listviewanimations:lib-core-slh:3.1.0@aar'
+    implementation 'se.emilsjolander:stickylistheaders:2.1.5'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+}

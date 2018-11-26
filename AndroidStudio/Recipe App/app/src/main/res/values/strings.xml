@@ -20,29 +20,28 @@
     <string name="nav_categories_more">more</string>
 
     <!-- New Recipe -->
-    <string name="add_recipe_title">Suggest Recipe</string>
-    <string name="recipe_name">Recipe Name</string>
-    <string name="recipe_image">Main Image</string>
-    <string name="recipe_directions">Directions</string>
-    <string name="recipe_ingredients">Ingredients</string>
-    <string name="recipe_category">Category</string>
-    <string name="recipe_new_ingredient">New Ingredient</string>
-    <string name="recipe_submit">Submit</string>
-    <string name="recipe_submitted">Recipe Submitted!</string>
-    <string name="add_image">Add an image before submission</string>
-    <string name="html_editor_insert_image_title">Insert Image</string>
-    <string name="html_editor_insert_image_description">Enter image url</string>
-    <string name="html_editor_insert_image_hint">Image URL</string>
-    <string name="html_editor_insert_link_title">Insert Link</string>
-    <string name="html_editor_insert_link_description">Enter Link Details</string>
+    <string name="add_recipe_title">レシピを投稿</string>
+    <string name="recipe_name">レシピ名</string>
+    <string name="recipe_image">メイン画像</string>
+    <string name="recipe_directions">作り方</string>
+    <string name="recipe_ingredients">材料</string>
+    <string name="recipe_category">カテゴリー選択</string>
+    <string name="recipe_new_ingredient">新しい食材</string>
+    <string name="recipe_submit">投稿！</string>
+    <string name="recipe_submitted">レシピが投稿されました！</string>
+    <string name="add_image">投稿まえに画像を追加してください</string>
+    <string name="html_editor_insert_image_title">イメージを挿入</string>
+    <string name="html_editor_insert_image_description">イメージURLを挿入</string>
+    <string name="html_editor_insert_image_hint">イメージ URL</string>
+    <string name="html_editor_insert_link_title">リンクの挿入</string>
+    <string name="html_editor_insert_link_description">リンクの説明</string>
     <string name="html_editor_insert_link_url_hint">URL</string>
-    <string name="html_editor_insert_link_title_hint">Title</string>
-    <string name="recipe_enable_nutrition">Enable</string>
-    <string name="recipe_details">General Details</string>
-    <string name="recipe_preparation_time">Prep. Time (mins)</string>
-    <string name="recipe_cooking_time">Cook Time (mins)</string>
-    <string name="recipe_difficulty">Difficulty (1 to 10)</string>
-
+    <string name="html_editor_insert_link_title_hint">タイトル</string>
+    <string name="recipe_enable_nutrition">追加</string>
+    <string name="recipe_details">詳細</string>
+    <string name="recipe_preparation_time">準備時間 (分)</string>
+    <string name="recipe_cooking_time">料理時間 (分)</string>
+    <string name="recipe_difficulty">難易度 (1 to 10)</string>
 
     <!-- Search -->
     <string name="search_title">レシピを探す</string>
@@ -54,22 +53,22 @@
 
 
     <!-- Shopping List -->
-    <string name="shoppinglist_page_title">Shopping List</string>
-    <string name="shoppinglist_menu_clear">Clear All</string>
-    <string name="empty_shopping_list">No Items</string>
-    <string name="add_item_dialog_title">Add To List</string>
-    <string name="add_item_dialog_description">What would you like to add?</string>
-    <string name="add_item_dialog_hint">eg: salt and pepper</string>
-    <string name="add_item_other">Other</string>
+    <string name="shoppinglist_page_title">お買い物リスト</string>
+    <string name="shoppinglist_menu_clear">全て削除</string>
+    <string name="empty_shopping_list">お買い物リストは空です</string>
+    <string name="add_item_dialog_title">リストに追加</string>
+    <string name="add_item_dialog_description">何を追加したいですか？</string>
+    <string name="add_item_dialog_hint">塩、コショウ？</string>
+    <string name="add_item_other">その他</string>
 
 
     <!-- Favorites Screen -->
-    <string name="favorite_page_title">Favorite Recipes</string>
-    <string name="empty_recipes">No Recipes</string>
+    <string name="favorite_page_title">お気に入りレシピ</string>
+    <string name="empty_recipes">レシピなし</string>
 
     <!-- Recipe - General -->
-    <string name="recipe_page_title">Recipe</string>
-    <string name="share_icon_title">Share</string>
+    <string name="recipe_page_title">レシピ</string>
+    <string name="share_icon_title">シェア</string>
 
     <!-- Recipe - Ingredients -->
     <string name="ingredients_title">材料</string>
@@ -82,6 +81,7 @@
     <string name="shoppingcart_check_icon">&#xf00c;</string>
     <string name="shoppingcart_message">お買い物カゴに追加</string>
 
+
     <!-- Recipe - Directions -->
     <string name="directions_title">作り方</string>
     <string name="minutes">分</string>
@@ -90,32 +90,32 @@
     <string name="difficulty">難易度</string>
 
     <!-- Recipe - Nutrition -->
-    <string name="nutrition_title">栄養</string>
+    <string name="nutrition_title">栄養について</string>
     <string name="gram">g</string>
     <string name="milligram">mg</string>
     <string name="percent">%</string>
-    <string name="amount_per_serving">Amount per Serving</string>
+    <string name="amount_per_serving">1食当たりの栄養成分</string>
     <string name="calories">カロリー</string>
-    <string name="calories_from_fat">Calories from Fat</string>
-    <string name="daily_value">% Daily Value*</string>
-    <string name="total_fat">Total Fat</string>
-    <string name="saturated_fat">Saturated Fat</string>
-    <string name="trans_fat">Trans Fat</string>
-    <string name="cholesterol">Cholesterol</string>
-    <string name="sodium">Sodium</string>
-    <string name="total_carbohydrate">Total Carbohydrate</string>
-    <string name="dietary_fiber">Dietary Fiber</string>
-    <string name="sugars">Sugars</string>
-    <string name="protein">Protein</string>
-    <string name="vitamin_a">Vitamin A</string>
-    <string name="vitamin_c">Vitamin C</string>
-    <string name="calcium">Calcium</string>
-    <string name="iron">Iron</string>
-    <string name="daily_value_detail">* Percent Daily Values are based on a 2,000 calorie\ndiet. Your daily values may be higher or lower\ndepending on your calorie needs.</string>
+    <string name="calories_from_fat">脂肪からのカロリー</string>
+    <string name="daily_value">% 一日の摂取量目安*</string>
+    <string name="total_fat">総脂肪</string>
+    <string name="saturated_fat">飽和脂肪酸</string>
+    <string name="trans_fat">不飽和脂肪酸</string>
+    <string name="cholesterol">コレステロール</string>
+    <string name="sodium">ナトリウム</string>
+    <string name="total_carbohydrate">炭水化物</string>
+    <string name="dietary_fiber">食物繊維</string>
+    <string name="sugars">糖質</string>
+    <string name="protein">プロテイン</string>
+    <string name="vitamin_a">ビタミン A</string>
+    <string name="vitamin_c">ビタミン C</string>
+    <string name="calcium">カルシウム</string>
+    <string name="iron">鉄分</string>
+    <string name="daily_value_detail">* 1日の摂取目安:2000カロリーに基づく</string>
 
     <!-- Push notification channel id -->
     <string name="default_notification_channel_id">push_notifications</string>
-    <string name="default_notification_channel_name">push notifications</string>
+    <string name="default_notification_channel_name">プッシュ通知</string>
     <string name="default_notification_channel_description">news push notifications</string>
 
 
@@ -133,7 +133,7 @@
     <string name="pref_enable_push_notifications_summery">Enable to receive important news.</string>
 
     <!-- legal -->
-    <string name="privacy">Privacy Policy</string>
+    <string name="privacy">プライバシーポリシー</string>
     <string name="terms">利用規約</string>
 
     <!-- preference save key (to save favorites and shopping list in user phone) -->
